@@ -4,7 +4,7 @@ Shell script to install a [Ragnarok Masternode](https://ragnaproject.io/) on a L
 
 ## Installation
 ```
-wget https://raw.githubusercontent.com/mrgrow2k/Ragnarok/master/ragna_install.sh 
+wget https://raw.githubusercontent.com/ragnaproject/mnscripts/master/ragna_install.sh 
 ```
 ```
 chmod +x ragna_install.sh
@@ -57,7 +57,7 @@ ragnarok-cli masternode count **To check masternode list**
 
 ## Installation
 ```
-wget -q https://raw.githubusercontent.com/mrgrow2k/Ragnarok/master/ragna2-mn.sh 
+wget -q https://raw.githubusercontent.com/ragnaproject/mnscripts/master/ragna2-mn.sh 
 ```
 ```
 bash ragna2-mn.sh
