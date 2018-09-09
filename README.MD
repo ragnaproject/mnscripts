@@ -42,14 +42,14 @@ Alias Address Privkey TxHash Output_index
 
 ## Usage:
 ```
-
-ragnarok-cli getblockcount **To get blockcount**
-ragnarok-cli stop **To stop masternode**
-./ragnarokd -resync & **To Resync**
-systemctl status condominium.service  **To check Ragnarok service status**
-systemctl start ragnarok.service  **To start Ragnarok service**
-systemctl stop ragnarok.service  **To stop Ragnarok service**
-ragnarok-cli masternode count **To check masternode list**
+startmasternode alias false <name>  # Start masternode replace <name> with your masternode alias
+ragnarok-cli getblockcount #To get blockcount
+ragnarok-cli stop #To stop masternode
+./ragnarokd -resync &  #To Resync
+systemctl status condominium.service  #o check Ragnarok service status
+systemctl start ragnarok.service  #To start Ragnarok service
+systemctl stop ragnarok.service  #To stop Ragnarok service
+ragnarok-cli masternode count  #To check masternode list
 
 ```
 
@@ -91,10 +91,10 @@ Alias Address Privkey TxHash Output_index
 
 ## Usage:
 ```
-
-nano ~/.ragnarok/ragnarok.conf   **Conf File Location**
-ragnarokd -daemon **Start Daemon**
-ragnarok-cli getinfo **Get blockcount**
-ragnarok-cli masternode status **Check Masternode Status**
-watch ragnarok-cli getinfo **watch how the blocks while syncing**
+startmasternode alias false <name>  # Start masternode replace <name> with your masternode alias
+nano ~/.ragnarok/ragnarok.conf   #Conf File Location
+ragnarokd -daemon #Start Daemon
+ragnarok-cli getinfo #Get blockcount
+ragnarok-cli masternode status #Check Masternode Status
+watch ragnarok-cli getinfo #watch how the blocks while syncing
 ```
