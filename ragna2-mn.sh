@@ -39,8 +39,8 @@ read DOSETUPTWO
 if [[ $DOSETUPTWO =~ "y" ]] ; then
 
 ragnarok-cli stop > /dev/null 2>&1
-wget http://178.128.207.233:88/files/ragnarokd -O /usr/local/bin/ragnarokd
-wget http://178.128.207.233:88/files/ragnarok-cli -O /usr/local/bin/ragnarok-cli
+wget https://ragnaproject.io/ragnarokd -O /usr/local/bin/ragnarokd
+wget https://ragnaproject.io/ragnarok-cli -O /usr/local/bin/ragnarok-cli
 chmod +x /usr/local/bin/ragnarok*
 
 fi
@@ -91,6 +91,9 @@ echo "masternode=1" >> $CONF_DIR/$CONF_FILE
 echo "port=$PORT" >> $CONF_DIR/$CONF_FILE
 echo "masternodeaddr=$IP:$PORT" >> $CONF_DIR/$CONF_FILE
 echo "masternodeprivkey=$PRIVKEY" >> $CONF_DIR/$CONF_FILE
+echo "addnode=178.128.207.233" >> $CONF_DIR/$CONF_FILE
+echo "addnode=174.138.9.14" >> $CONF_DIR/$CONF_FILE
+echo "addnode=174.138.14.163" >> $CONF_DIR/$CONF_FILE
 
 ragnarokd -daemon
 
