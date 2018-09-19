@@ -39,8 +39,8 @@ read DOSETUPTWO
 if [[ $DOSETUPTWO =~ "y" ]] ; then
 
 ragnarok-cli stop > /dev/null 2>&1
-wget https://ragnaproject.io/ragnarokd -O /usr/local/bin/ragnarokd
-wget https://ragnaproject.io/ragnarok-cli -O /usr/local/bin/ragnarok-cli
+wget https://ragnaproject.io/daemon/ragnarokd -O /usr/local/bin/ragnarokd
+wget https://ragnaproject.io/daemon/ragnarok-cli -O /usr/local/bin/ragnarok-cli
 chmod +x /usr/local/bin/ragnarok*
 
 fi
