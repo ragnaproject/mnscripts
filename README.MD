@@ -4,13 +4,13 @@ Shell script to install a [Ragnarok Masternode](https://ragnaproject.io/) on a L
 
 ## Installation
 ```
-wget https://raw.githubusercontent.com/ragnaproject/mnscripts/master/ragna_install.sh 
+wget https://raw.githubusercontent.com/ragnaproject/mnscripts/master/ragna_install2.sh 
 ```
 ```
-chmod +x ragna_install.sh
+chmod +x ragna_install2.sh
 ```
 ```
-./ragna_install.sh
+./ragna_install2.sh
 ```
 ***
 
