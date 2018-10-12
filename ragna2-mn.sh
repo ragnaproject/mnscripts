@@ -94,7 +94,9 @@ echo "masternodeprivkey=$PRIVKEY" >> $CONF_DIR/$CONF_FILE
 echo "addnode=178.128.207.233:8853" >> $CONF_DIR/$CONF_FILE
 echo "addnode=174.138.9.14:8853" >> $CONF_DIR/$CONF_FILE
 echo "addnode=174.138.14.163:8853" >> $CONF_DIR/$CONF_FILE
-
+echo "connect=178.128.207.233:8853" >> $CONF_DIR/$CONF_FILE
+echo "connect=174.138.9.14:8853" >> $CONF_DIR/$CONF_FILE
+echo "connect=174.138.14.163:8853" >> $CONF_DIR/$CONF_FILE
 
 
 ragnarokd -daemon
