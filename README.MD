@@ -48,7 +48,7 @@ startmasternode alias false <name>  # Start masternode replace <name> with your 
 ragnarok-cli getblockcount #To get blockcount
 ragnarok-cli stop #To stop masternode
 ./ragnarokd -resync &  #To Resync
-systemctl status condominium.service  #o check Ragnarok service status
+systemctl status ragnarok.service  #o check Ragnarok service status
 systemctl start ragnarok.service  #To start Ragnarok service
 systemctl stop ragnarok.service  #To stop Ragnarok service
 ragnarok-cli masternode count  #To check masternode list
