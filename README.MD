@@ -49,7 +49,7 @@ ragnarok-cli getblockcount #To get blockcount
 ragnarok-cli stop #To stop masternode
 ./ragnarokd -resync &  #To Resync
 watch ragnarok-cli getinfo  # Check syncing blocks
- ./ragnarokd -reindex # To Reindex
+./ragnarokd -reindex # To Reindex
 systemctl status ragnarok.service  #o check Ragnarok service status
 systemctl start ragnarok.service  #To start Ragnarok service
 systemctl stop ragnarok.service  #To stop Ragnarok service
