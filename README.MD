@@ -1,7 +1,7 @@
 If this [First Masternode Script](https://github.com/ragnaproject/mnscripts/blob/master/README.MD#installation) is not working use this [Second Masternode Script](https://github.com/ragnaproject/mnscripts/blob/master/README.MD#installation-1)
 
 # Ragnarok
-Shell script to install a [Ragnarok Masternode](https://ragnaproject.io/) on a Linux server running Ubuntu 16.04. 
+Shell script to install a [Ragnarok Masternode](https://ragnaproject.io/) on a Linux server running Ubuntu 16.04.  [PDF Guide](https://ragnaproject.io/Ragnarok_Masternode_Guide.pdf)
 ***
 
 ## Installation
