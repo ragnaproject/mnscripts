@@ -21,7 +21,7 @@ chmod +x ragna_install.sh
 After the MN is up and running, you need to configure the desktop wallet accordingly. Here are the steps:  
 1. Open the Ragna Desktop Wallet.  
 2. Go to RECEIVE and create a New Address: **MN1**  
-3. Send **30000** RAGNA to **MN1**. You need to send all 30000 coins in one single transaction.
+3. Send **140000** RAGNA to **MN1**. You need to send all 140000 coins in one single transaction.
 4. Wait for 15 confirmations.  
 5. Go to **Tools -> "Debug console - Console"**
 6. Type the following command: **masternode outputs**
