@@ -6,10 +6,10 @@ CONFIGFOLDER='/root/.ragnarok'
 COIN_DAEMON='ragnarokd'
 COIN_CLI='ragnarok-cli'
 COIN_PATH='/usr/local/bin/'
-COIN_TGZ='https://github.com/ragnaproject/Ragnarok/releases/download/3.0.1.0/Ragnarok-3.0.1.0-DAEMON.zip'
+COIN_TGZ='https://github.com/ragnaproject/Ragnarok/releases/download/3.1.4.0/ragnarok-3.1.4-x86_64-linux-static.zip'
 COIN_ZIP=$(echo $COIN_TGZ | awk -F'/' '{print $NF}')
 COIN_NAME='Ragnarok'
-COIN_EXPLORER='https://chain.ragnaproject.io'
+COIN_EXPLORER='http://159.65.64.248:88'
 COIN_PORT=8853
 RPC_PORT=8854
 
@@ -155,9 +155,7 @@ maxconnections=256
 masternode=1
 masternodeaddr=$NODEIP:$COIN_PORT
 masternodeprivkey=$COINKEY
-addnode=178.128.207.233
-addnode=174.138.9.14
-addnode=174.138.14.163
+addnode=159.65.64.248
 EOF
 }
 
