@@ -6,7 +6,7 @@ CONFIGFOLDER='/root/.ragnarok'
 COIN_DAEMON='ragnarokd'
 COIN_CLI='ragnarok-cli'
 COIN_PATH='/usr/local/bin/'
-COIN_TGZ='https://github.com/ragnaproject/Ragnarok/releases/download/3.1.4.0/ragnarok-3.1.4-x86_64-linux-static.zip'
+COIN_TGZ='https://github.com/ragnaproject/Ragnarok/releases/download/3.1.4/ragnarok-3.1.4-x86_64-linux-static.zip'
 COIN_ZIP=$(echo $COIN_TGZ | awk -F'/' '{print $NF}')
 COIN_NAME='Ragnarok'
 COIN_EXPLORER='http://159.65.64.248:88'
@@ -57,6 +57,7 @@ function download_node() {
   compile_error
   unzip $COIN_ZIP >/dev/null 2>&1
   compile_error
+  rm -rf ragnarok*.zip
   cd linux
   chmod +x $COIN_DAEMON
   chmod +x $COIN_CLI
