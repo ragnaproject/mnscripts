@@ -5,6 +5,7 @@ CONFIGFOLDER='/root/.ragnarok'
 COIN_DAEMON='/usr/local/bin/ragnarokd'
 COIN_CLI='/usr/local/bin/ragnarok-cli'
 COIN_REPO='https://github.com/ragnaproject/Ragnarok/releases/download/v3.1.4/ragnarok-3.1.4-x86_64-linux-static.tar.gz'
+BOOTSTRAP='https://github.com/ragnaproject/bootstrap/releases/download/3.1.4/bootstrap.tar.gz'
 COIN_NAME='ragnarok'
 COIN_PORT=8853
 
@@ -48,6 +49,9 @@ function compile_node() {
   rm -f /usr/local/bin/ragnarok* >/dev/null 2>&1
   rm -rf $CONFIGFOLDER/blocks/ >/dev/null 2>&1
   rm -rf $CONFIGFOLDER/chainstate/ >/dev/null 2>&1
+  rm -rf $CONFIGFOLDER/database/ >/dev/null 2>&1
+  rm -rf $CONFIGFOLDER/sporks/ >/dev/null 2>&1
+  rm -rf $CONFIGFOLDER/zerocoin/ >/dev/null 2>&1
   rm $CONFIGFOLDER/banlist.dat >/dev/null 2>&1
   rm $CONFIGFOLDER/mnpayments.dat >/dev/null 2>&1
   rm $CONFIGFOLDER/fee_estimates.dat >/dev/null 2>&1
@@ -58,7 +62,10 @@ function compile_node() {
   rm $CONFIGFOLDER/db.log >/dev/null 2>&1
   rm $CONFIGFOLDER/bootstrap.dat >/dev/null 2>&1
   rm $CONFIGFOLDER/bootstrap.dat.old >/dev/null 2>&1
-
+  cd $CONFIGFOLDER >/dev/null 2>&1
+  wget $BOOTSTRAP >/dev/null 2>&1
+  tar xvzf bootstrap.tar.gz >/dev/null 2>&1
+  rm -rf  bootstrap.tar.gz >/dev/null 2>&1
   sleep 5
   clear
 
@@ -140,7 +147,7 @@ function important_information() {
    echo -e "Status: ${RED}/etc/init.d/$COIN_NAME status${NC}"
  fi
  echo -e "Check if $COIN_NAME is running by using the following command:\n${RED}ps -ef | grep $COIN_DAEMON | grep -v grep${NC}"
- echo -e "Now update your local wallet (Windows/Mac) and run Masternode from local wallet."
+ echo -e "Now update your local wallet (Windows/Mac) and restart Masternode from local wallet."
  echo -e "================================================================================"
 }
 
