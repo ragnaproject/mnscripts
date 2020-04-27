@@ -63,3 +63,9 @@ wget -q https://raw.githubusercontent.com/ragnaproject/mnscripts/master/updateVP
 ```
 bash updateVPS.sh
 ```
+
+## To update masternode 
+```
+wget -q https://raw.githubusercontent.com/ragnaproject/mnscripts/master/updatenode.sh
+bash updatenode.sh
+```
