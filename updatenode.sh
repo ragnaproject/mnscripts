@@ -5,7 +5,7 @@ CONFIGFOLDER='/root/.ragnarok'
 COIN_DAEMON='/usr/local/bin/ragnarokd'
 COIN_CLI='/usr/local/bin/ragnarok-cli'
 COIN_REPO='https://github.com/ragnaproject/Ragnarok/releases/download/v3.1.4/ragnarok-3.1.4-x86_64-linux-static.tar.gz'
-BOOTSTRAP='https://github.com/ragnaproject/bootstrap/releases/download/3.1.4/bootstrap.tar.gz'
+BOOTSTRAP='https://github.com/ragnaproject/bootstraps/releases/download/v3.1.4/bootstrap.tar.gz'
 COIN_NAME='ragnarok'
 COIN_PORT=8853
 
@@ -62,6 +62,7 @@ function compile_node() {
   rm $CONFIGFOLDER/db.log >/dev/null 2>&1
   rm $CONFIGFOLDER/bootstrap.dat >/dev/null 2>&1
   rm $CONFIGFOLDER/bootstrap.dat.old >/dev/null 2>&1
+  echo -e "Downloading $COIN_NAME bootstrap data"
   cd $CONFIGFOLDER >/dev/null 2>&1
   wget $BOOTSTRAP >/dev/null 2>&1
   tar xvzf bootstrap.tar.gz >/dev/null 2>&1
