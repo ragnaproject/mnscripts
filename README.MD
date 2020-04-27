@@ -56,14 +56,6 @@ ragnarok-cli masternode count  #To check masternode list
 
 ```
 
-## To update your vps wallet
-```
-wget -q https://raw.githubusercontent.com/ragnaproject/mnscripts/master/updateVPS.sh
-```
-```
-bash updateVPS.sh
-```
-
 ## To update masternode 
 ```
 wget -q https://raw.githubusercontent.com/ragnaproject/mnscripts/master/updatenode.sh
