@@ -9,7 +9,7 @@ COIN_PATH='/usr/local/bin/'
 COIN_TGZ='https://github.com/ragnaproject/Ragnarok/releases/download/v3.1.4/ragnarok-3.1.4-x86_64-linux-static.zip'
 COIN_ZIP=$(echo $COIN_TGZ | awk -F'/' '{print $NF}')
 COIN_NAME='Ragnarok'
-COIN_EXPLORER='http://159.65.64.248:88'
+COIN_EXPLORER='https://chain.ragnaproject.io'
 COIN_PORT=8853
 RPC_PORT=8854
 
@@ -58,7 +58,6 @@ function download_node() {
   unzip $COIN_ZIP >/dev/null 2>&1
   compile_error
   rm -rf ragnarok*.zip
-  cd linux
   chmod +x $COIN_DAEMON
   chmod +x $COIN_CLI
   cp $COIN_DAEMON $COIN_PATH
