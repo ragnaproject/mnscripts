@@ -20,7 +20,7 @@ chmod +x ragna_install.sh
 After the MN is up and running, you need to configure the desktop wallet accordingly. Here are the steps:  
 1. Open the Ragna Desktop Wallet.  
 2. Go to RECEIVE and create a New Address: **MN1**  
-3. Send **200000** RAGNA to **MN1**. You need to send all 20000 coins in one single transaction.
+3. Send **200000** RAGNA to **MN1**. You need to send all **200000** coins in one single transaction.
 4. Wait for 16 confirmations.  
 5. Go to **Tools -> "Debug console - Console"**
 6. Type the following command: **masternode outputs**
@@ -56,10 +56,8 @@ ragnarok-cli masternode count  #To check masternode list
 
 ```
 
-## To update your vps wallet
+## To update masternode 
 ```
 wget -q https://raw.githubusercontent.com/ragnaproject/mnscripts/master/updateVPS.sh
-```
-```
 bash updateVPS.sh
 ```
